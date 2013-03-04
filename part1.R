@@ -10,7 +10,8 @@ close(con)
 #*****************************************************************
 # Load historical data
 #****************************************************************** 
-load.packages('quantmod')   
+load.packages('quantmod') 
+bt.pca.test()
 
 # load data saved in the bt.pca.test() function
 load(file='bt.pca.test.Rdata')
