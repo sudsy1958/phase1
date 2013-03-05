@@ -6835,7 +6835,7 @@ bt.pca.test <- function()
   #*****************************************************************
   # Load historical data
   #****************************************************************** 
-  load.packages('quantmod')	
+  require('quantmod')	
   tickers = dow.jones.components()
   
   sectors = factor(sector.map[ match(tickers, sector.map[,'ticker']), 'sector'])

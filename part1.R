@@ -2,15 +2,12 @@
 # Load Systematic Investor Toolbox (SIT)
 # http://systematicinvestor.wordpress.com/systematic-investor-toolbox/
 ###############################################################################
-setInternet2(TRUE)
-con = gzcon(url('http://www.systematicportfolio.com/sit.gz', 'rb'))
-source(con)
-close(con)
+
 
 #*****************************************************************
 # Load historical data
 #****************************************************************** 
-load.packages('quantmod') 
+library('quantmod') 
 bt.pca.test()
 
 # load data saved in the bt.pca.test() function
